@@ -21,7 +21,7 @@ body {
   min-height: 100%;
   background: #fff;
   color: #4c4948;
-  font-size: 14px;
+  font-size: 16px;
   font-family: Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 2;
 }
@@ -173,10 +173,8 @@ table td {
   padding-top: 1.4rem;
   background: #263238;
   color: #eff;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
-  counter-reset: line;
-  white-space: pre-wrap;
 }
 figure.highlight {
   position: relative;
@@ -196,7 +194,7 @@ blockquote {
   background: rgba(27,31,35,0.05);
   color: #1f2d3d;
   word-wrap: break-word;
-  font-size: 14px;
+  font-size: 16px;
 }
 .article-container pre code {
   padding: 0;
@@ -225,15 +223,6 @@ blockquote {
 .article-container .highlight .line::selection {
   background: rgba(128,203,196,0.125);
   color: #eff;
-}
-.article-container .highlight .line:before {
-  display: inline-block;
-  padding: 0 0.3rem 0 0;
-  min-width: 1.6rem;
-  color: #37474f;
-  content: counter(line);
-  counter-increment: line;
-  text-align: left;
 }
 .article-container .highlight table {
   position: relative;
