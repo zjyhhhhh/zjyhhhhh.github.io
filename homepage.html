@@ -56,7 +56,11 @@
               <span class="text">About</span>
             </a>
           </li>
-
+          <li class="nav-item">
+            <a href="#">
+              <span class="line"></span>
+              <span class="text">Skills</span>
+            </a>
           <li class="nav-item">
             <a href="#">
               <span class="line"></span>
@@ -86,15 +90,127 @@
           </div>
         </div>
       </div>
+      <div class="main" id="main">
+        <!-- <div class="about">
+          <h2>About Me</h2>
+          <p>My passion for Computer Science began during my undergraduate studies in Data Science at the University of
+            Liverpool. There, I delved deep into data processing, data mining, and data analysis, sparking a desire to
+            apply my knowledge to real-world challenges. </p>
+          <p> Driven by this ambition, I joined the University of Hong Kong as a research assistant from November 2021
+            to July 2022, under the supervision of Dr. Lequan Yu and Dr. Shujun Wang. My research
+            focused on multi-task self-supervised learning in 3D medical image analysis, leading to a publication as the
+            first author in CMMCA 2022 in conjunction with MICCAI 2022, where it was awarded Best Paper.</p>
+          <p> In addition to research, I sought to experience the industry side of data work, leading me to a data
+            engineer intern role at GoLaxy in the summer of 2022. There, I worked on news data mining and sentiment
+            analysis, further broadening my understanding of data's impact.
+            to September 2022.</p>
+          <p> However, through these experiences, I realized that while many technologies are well-developed in the
+            academic world, their real-world application often falls short. This insight led me to ask myself, How can
+            technology not just solve problems in research, but enhance human experiences? This question fueled my
+            transition into software development.</p>
+          <p> To gain practical experience, I participated in the Summer of Reproducibility, an open-source
+            initiative,
+            where I was mentored by Dr. Anjo Vahldiek-Oberwagner from Intel Labs. Together, we developed software to
+            monitor multi-experiments and multi-iterations in machine performance, aiding researchers in improving
+            reproducibility.</p>
+          <p>With a passion for bridging the gap between research and application, I pursued a master degree in
+            Electrical and
+            Computer Engineering at the University of Waterloo. Throughout this journey, I specialized in software
+            development, honing my skills in creating robust and scalable solutions that bring cutting-edge research to
+            life. Now, I am seeking opportunities as a Software Engineer, where I can leverage my technical expertise
+            and innovative mindset to develop impactful software solutions that address real-world challenges.</p>
+          <p> I am particularly interested in roles that allow me to work on diverse and challenging projects, whether
+            it be in web development, AI integration, or system architecture. I place a high value on the long-term
+            prospects of my career and am deeply committed to roles that offer not only immediate engagement but also
+            significant potential for personal growth and development. I am focused on aligning myself with a company
+            that is forward-thinking, with a strong vision for the future, and that offers opportunities for continuous
+            learning and professional advancement.</p>
+        </div> -->
+        <div class="skills"></div>
+        <div class="experience">
+          <h2>Experience</h2>
+          <div class="work">
+            <div class="work-time"> Nov 2021 - Jul 2022</div>
+            <div class="work-detail">
+              <h3>Research Assistant</h3>
+              <h4>University of Hong Kong</h4>
+              <p>Conducted research on multi-task self-supervised learning in 3D medical image analysis, leading to a
+                publication as the first author in CMMCA 2022 in conjunction with MICCAI 2022, where it was awarded Best
+                Paper.</p>
+              <ul class="tech-stack">
+                <li>Python</li>
+                <li>PyTorch</li>
+                <li>AI</li>
+                <li>Computer Vision</li>
+              </ul>
+            </div>
 
-      <div class="noise"></div>
-      <script>
-        document.getElementById('see-more').addEventListener('click', function (e) {
-          const sidebar = document.getElementById('sidebar');
-          sidebar.classList.add('active');
-          const welcome = document.getElementById('welcome');
-          welcome.remove();
-        });
-      </script>
+          </div>
+          <div class="work">
+            <div class="work-time"> Jun 2022 - Aug 2022</div>
+            <div class="work-detail">
+              <h3>Data Engineer Intern</h3>
+              <h4>GoLaxy</h4>
+              <p>Worked on news data mining and sentiment analysis, further broadening my understanding of data's
+                impact.
+              </p>
+              <ul class="tech-stack">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Scrapy</li>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>Data Mining</li>
+              </ul>
+            </div>
+          </div>
+          <div class="work">
+            <div class="work-time"> Jul 2022 - Sep 2022</div>
+            <div class="work-detail">
+              <h3>Research Assisstant Intern</h3>
+              <h4>Xi'an Jiaotong-Liverpool University</h4>
+              <p>Worked on news data mining and sentiment analysis, further broadening my understanding of data's
+                impact.
+              </p>
+              <ul class="tech-stack">
+                <li>Python</li>
+                <li>PyTorch</li>
+                <li>AI</li>
+                <li>Computer Vision</li>
+                <li>Image Segementation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="work">
+            <div class="work-time"> May 2023 - Sep 2023</div>
+            <div class="work-detail">
+              <h3>Software Developer Intern</h3>
+              <h4>Summer of Reproducibility</h4>
+              <p>Worked on news data mining and sentiment analysis, further broadening my understanding of data's
+                impact.
+              </p>
+              <ul class="tech-stack">
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>MongoDB</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="projects">
+          <h2>Projects</h2>
+        </div>
+        <!-- <div class="noise"></div> -->
+        <script>
+          document.getElementById('see-more').addEventListener('click', function (e) {
+            const welcome = document.getElementById('welcome');
+            welcome.remove();
+            document.getElementById('sidebar').style.transform = 'translateX(40vw)';
+            document.getElementById('main').style.transform = 'translateX(-60vw)';
+          });
+        </script>
 </body>
 </html>
