@@ -1,6 +1,7 @@
 html {
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
   overflow: hidden;
 }
 
@@ -173,12 +174,21 @@ nav ul li a {
   color: #a3bfa8;
   transform: translateX(10px);
 }
-.sidebar .nav-links .nav-item.active .line {
-  width: 30px;
-  background-color: #a3bfa8;
+.sidebar .nav-links .nav-item a.active .line {
+  width: 50px !important;
+  background-color: #a3bfa8 !important;
+  height: 3px !important;
 }
-.sidebar .nav-links .nav-item.active .text {
+.sidebar .nav-links .nav-item a.active .text {
+  color: #a3bfa8 !important;
+  transform: translateX(10px) !important;
+}
+.sidebar .nav-item.active a {
   color: #a3bfa8;
+}
+.sidebar .nav-item.active .line {
+  background-color: #a3bfa8;
+  width: 50px;
 }
 .sidebar .contact-links {
   height: 20%;
@@ -213,7 +223,7 @@ nav ul li a {
   margin-bottom: 10px;
   opacity: 0.8;
 }
-.main .experience .work {
+.main .experience {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -221,34 +231,35 @@ nav ul li a {
   padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 2%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
-.main .experience .work:hover {
+.main .experience:hover {
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 5px 0 5px rgba(226, 226, 226, 0.2);
   border-radius: 25px;
 }
-.main .experience .work .work-time {
+.main .experience .experience-time {
   width: 35%;
   z-index: 10;
   padding-top: 2px;
+  padding-right: 5%;
 }
-.main .experience .work .work-detail {
+.main .experience .experience-detail {
   flex: 1;
 }
-.main .experience .work .work-detail h3 {
+.main .experience .experience-detail h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
-.main .experience .work .work-detail h4 {
+.main .experience .experience-detail h4 {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 500;
 }
-.main .experience .work .work-detail p {
+.main .experience .experience-detail p {
   font-size: 0.8rem;
 }
-.main .experience .work .work-detail ul {
+.main .experience .experience-detail ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -257,7 +268,7 @@ nav ul li a {
   padding: 0;
   flex-wrap: wrap;
 }
-.main .experience .work .work-detail ul li {
+.main .experience .experience-detail ul li {
   font-size: 0.8rem;
   font-weight: 500;
   padding: 0 5px;
@@ -269,6 +280,26 @@ nav ul li a {
   padding: 5px 10px;
   margin-right: 5px;
   margin-bottom: 5px;
+}
+.main .more-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+  margin-left: 5%;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 2px;
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.main .more-link i {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+.main .more-link:hover i {
+  transform: translate(3px, -3px);
 }
 
 .more-link {
@@ -292,6 +323,14 @@ nav ul li a {
 }
 .more-link:hover::after {
   width: 100%;
+}
+
+.about p {
+  padding-right: 2%;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  opacity: 0.8;
 }
 
 .social-links {
@@ -386,6 +425,55 @@ nav ul li a {
   background-repeat: repeat;
   opacity: 0.25;
   pointer-events: none;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.skill-card {
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-card:hover {
+  transform: translateY(-8px);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.skill-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-left: 0;
+  display: flex;
+  text-align: center;
+  color: #333;
+}
+.skill-card h3 i {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill-card ul li {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 8px 12px;
+  background-color: #a3bfa8;
+  color: #fff;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  margin: 5px 5px 5px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

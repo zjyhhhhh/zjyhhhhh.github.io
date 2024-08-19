@@ -14,13 +14,6 @@
 </head>
 <body>
   <div class="container">
-    <!-- <nav>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav> -->
     <div class="content">
       <div id="welcome">
         <div class="intro" id="intro">
@@ -50,32 +43,33 @@
         <h3>Software Developer</h3>
         <p>I create seamless and intuitive digital experiences that bridge technology with human connection.</p>
         <ul class="nav-links">
-          <li class="nav-item">
-            <a href="#">
-              <span class="line"></span>
-              <span class="text">About</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#">
+          <li class="nav-item" data-section="skills">
+            <a href="#skills">
               <span class="line"></span>
               <span class="text">Skills</span>
             </a>
-          <li class="nav-item">
-            <a href="#">
-              <span class="line"></span>
-              <span class="text">Experience</span>
-            </a>
-
           </li>
-          <li class="nav-item">
-            <a href="#">
+          <li class="nav-item" data-section="work-experience">
+            <a href="#work-experience">
+              <span class="line"></span>
+              <span class="text">Work Experience</span>
+            </a>
+          </li>
+          <li class="nav-item" data-section="projects">
+            <a href="#projects">
               <span class="line"></span>
               <span class="text">Projects</span>
             </a>
-
+          </li>
+          <li class="nav-item" data-section="about-me">
+            <a href="#about-me">
+              <span class="line"></span>
+              <span class="text">About Me</span>
+            </a>
           </li>
         </ul>
+
+
         <div class="contact-links">
           <div class="social-links">
             <a href="https://www.linkedin.com/in/jiayuan-zhu/" target="_blank" class="more-link">
@@ -91,7 +85,191 @@
         </div>
       </div>
       <div class="main" id="main">
-        <!-- <div class="about">
+
+        <section class="skills" id="skills" data-section="skills">
+          <h2>Skills</h2>
+          <div class="skills-container">
+            <div class="skill-card">
+              <h3><i class="fas fa-code"></i> Programming Languages</h3>
+              <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3><i class="fas fa-server"></i> DevOps</h3>
+              <ul>
+                <li>Git</li>
+                <li>Docker</li>
+                <li>CI/CD</li>
+                <li>Nginx</li>
+                <li>Kubernetes</li>
+                <li>AWS</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3><i class="fas fa-globe"></i> Web Development</h3>
+              <ul>
+                <li>React</li>
+                <li>React Native</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Spring-boot</li>
+                <li>FastAPI</li>
+                <li>Django</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3><i class="fas fa-brain"></i> AI & Data</h3>
+              <ul>
+                <li>PyTorch</li>
+                <li>TensorFlow</li>
+                <li>NumPy</li>
+                <li>Pandas</li>
+                <li>Matplotlib</li>
+                <li>Apache Hadoop</li>
+                <li>Spark</li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+        <section class="works" id="work-experience">
+          <h2>Work Experience</h2>
+          <div class="work experience">
+            <div class="experience-time"> Nov 2021 - Jul 2022</div>
+            <div class="experience-detail">
+              <h3>Research Assistant</h3>
+              <h4>University of Hong Kong</h4>
+              <p>Led research on multi-task self-supervised learning in 3D medical image analysis, culminating to a
+                publication as the first author in CMMCA 2022 in conjunction with MICCAI 2022, where it was awarded Best
+                Paper.</p>
+              <ul class="tech-stack">
+                <li>Python</li>
+                <li>PyTorch</li>
+                <li>AI</li>
+                <li>Computer Vision</li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="work experience">
+            <div class="experience-time"> Jun 2022 - Aug 2022</div>
+            <div class="experience-detail">
+              <h3>Data Engineer Intern</h3>
+              <h4>GoLaxy</h4>
+              <p>Focused on news data mining and sentiment analysis, I utilized the Scrapy framework to construct a
+                robust data layer for capturing and analyzing multi-platform information. This effort successfully
+                resulted in crawling and processing over 100,000 news articles, followed by comprehensive sentiment
+                analysis of the extracted data.
+              </p>
+              <ul class="tech-stack">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Scrapy</li>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>Data Mining</li>
+              </ul>
+            </div>
+          </div>
+          <div class="work experience">
+            <div class="experience-time"> Jul 2022 - Sep 2022</div>
+            <div class="experience-detail">
+              <h3>Research Assisstant</h3>
+              <h4>Xi'an Jiaotong-Liverpool University</h4>
+              <p>Contributed to a project aimed at enhancing medical image segmentation, particularly in the context of
+                detecting left atrium and scar tissue in cardiac MRIs. My role involved the preprocessing and
+                postprocessing of medical images, supporting the development of more accurate segmentation models.
+              </p>
+              <ul class="tech-stack">
+                <li>Python</li>
+                <li>PyTorch</li>
+                <li>AI</li>
+                <li>Computer Vision</li>
+                <li>Image Segementation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="work experience">
+            <div class="experience-time"> May 2023 - Sep 2023</div>
+            <div class="experience-detail">
+              <h3>Software Developer Intern</h3>
+              <h4>Summer of Reproducibility</h4>
+              <p>Streamlined the experimentation process by developing a full-stack system that facilitates efficient
+                testing, log recording, and analysis of experiment iterations across diverse environments, with
+                comprehensive documentation to ensure smooth deployment and utilization.
+              </p>
+              <ul class="tech-stack">
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+              </ul>
+            </div>
+          </div>
+          <a href="resume.pdf" class="more-link resume-link" target="_blank">
+            View Full Resume <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+
+        </section>
+        <section class="projects" id="projects">
+          <h2>Projects</h2>
+          <div class="project experience">
+            <img src="ExpresultHub.png" alt="ExpresultHub image" class="experience-time">
+            <div class="experience-detail">
+              <h3>ExpresultHub</h3>
+              <p>When conducting reproducibility research, it is often necessary to run the same program multiple times
+                and record various server metrics, such as CPU utilization, memory usage, and other relevant data.
+                ExpresultHub is designed to assist researchers in automating the recording of these inputs. Researchers
+                simply need to specify the program commands, the metrics to monitor, and the number of iterations in our
+                script. Our system will automatically log this data in the background and store it in JSON files.
+                Additionally, we provide a GUI with charts to help users visualize the recorded data effectively.</p>
+              <ul class="tech-stack">
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Docker</li>
+                <li>Vercel</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project experience">
+            <img src="WellnessWave.png" alt="ExpresultHub image" class="experience-time">
+            <div class="experience-detail">
+              <h3>WellnessWave</h3>
+              <p>WellnessWave is designed to assist individuals who want to maintain their health by tracking their
+                daily diet, exercise, and changes in weight and measurements. The platform also aims to build a
+                community where users can post and document their fitness or dietary journeys. It offers interactive
+                features such as likes, dislikes, comments, and the ability to follow others, fostering mutual support
+                and accountability among users.
+              </p>
+              <ul class="tech-stack">
+                <li>TypeScript</li>
+                <li>Python</li>
+                <li>React-Native</li>
+                <li>MongoDB</li>
+                <li>MySQL</li>
+                <li>FastAPI</li>
+                <li>AWS EC2</li>
+                <li>AWS S3</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://github.com/zjyhhhhh?tab=repositories" class="more-link resume-link">
+            View More Project in Github<i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </section>
+
+        <section class="about" id="about-me">
           <h2>About Me</h2>
           <p>My passion for Computer Science began during my undergraduate studies in Data Science at the University of
             Liverpool. There, I delved deep into data processing, data mining, and data analysis, sparking a desire to
@@ -102,8 +280,7 @@
             first author in CMMCA 2022 in conjunction with MICCAI 2022, where it was awarded Best Paper.</p>
           <p> In addition to research, I sought to experience the industry side of data work, leading me to a data
             engineer intern role at GoLaxy in the summer of 2022. There, I worked on news data mining and sentiment
-            analysis, further broadening my understanding of data's impact.
-            to September 2022.</p>
+            analysis, further broadening my understanding of data's impact.</p>
           <p> However, through these experiences, I realized that while many technologies are well-developed in the
             academic world, their real-world application often falls short. This insight led me to ask myself, How can
             technology not just solve problems in research, but enhance human experiences? This question fueled my
@@ -125,84 +302,10 @@
             significant potential for personal growth and development. I am focused on aligning myself with a company
             that is forward-thinking, with a strong vision for the future, and that offers opportunities for continuous
             learning and professional advancement.</p>
-        </div> -->
-        <div class="skills"></div>
-        <div class="experience">
-          <h2>Experience</h2>
-          <div class="work">
-            <div class="work-time"> Nov 2021 - Jul 2022</div>
-            <div class="work-detail">
-              <h3>Research Assistant</h3>
-              <h4>University of Hong Kong</h4>
-              <p>Conducted research on multi-task self-supervised learning in 3D medical image analysis, leading to a
-                publication as the first author in CMMCA 2022 in conjunction with MICCAI 2022, where it was awarded Best
-                Paper.</p>
-              <ul class="tech-stack">
-                <li>Python</li>
-                <li>PyTorch</li>
-                <li>AI</li>
-                <li>Computer Vision</li>
-              </ul>
-            </div>
+        </section>
 
-          </div>
-          <div class="work">
-            <div class="work-time"> Jun 2022 - Aug 2022</div>
-            <div class="work-detail">
-              <h3>Data Engineer Intern</h3>
-              <h4>GoLaxy</h4>
-              <p>Worked on news data mining and sentiment analysis, further broadening my understanding of data's
-                impact.
-              </p>
-              <ul class="tech-stack">
-                <li>Python</li>
-                <li>SQL</li>
-                <li>Scrapy</li>
-                <li>Pandas</li>
-                <li>NumPy</li>
-                <li>Data Mining</li>
-              </ul>
-            </div>
-          </div>
-          <div class="work">
-            <div class="work-time"> Jul 2022 - Sep 2022</div>
-            <div class="work-detail">
-              <h3>Research Assisstant Intern</h3>
-              <h4>Xi'an Jiaotong-Liverpool University</h4>
-              <p>Worked on news data mining and sentiment analysis, further broadening my understanding of data's
-                impact.
-              </p>
-              <ul class="tech-stack">
-                <li>Python</li>
-                <li>PyTorch</li>
-                <li>AI</li>
-                <li>Computer Vision</li>
-                <li>Image Segementation</li>
-              </ul>
-            </div>
-          </div>
-          <div class="work">
-            <div class="work-time"> May 2023 - Sep 2023</div>
-            <div class="work-detail">
-              <h3>Software Developer Intern</h3>
-              <h4>Summer of Reproducibility</h4>
-              <p>Worked on news data mining and sentiment analysis, further broadening my understanding of data's
-                impact.
-              </p>
-              <ul class="tech-stack">
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>React</li>
-                <li>MongoDB</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="projects">
-          <h2>Projects</h2>
-        </div>
+
+
         <!-- <div class="noise"></div> -->
         <script>
           document.getElementById('see-more').addEventListener('click', function (e) {
@@ -211,6 +314,37 @@
             document.getElementById('sidebar').style.transform = 'translateX(40vw)';
             document.getElementById('main').style.transform = 'translateX(-60vw)';
           });
+
+          document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('section');
+            const navItems = document.querySelectorAll('.nav-item');
+
+            const observerOptions = {
+              root: document.getElementById('main'),
+              threshold: 0.2,
+              rootMargin: '0px 0px -50% 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                const sectionId = entry.target.getAttribute('id');
+                if (entry.isIntersecting) {
+                  navItems.forEach(item => {
+                    item.classList.remove('active');
+                    if (item.getAttribute('data-section') === sectionId) {
+                      item.classList.add('active');
+                    }
+                  });
+                }
+              });
+            }, observerOptions);
+
+            sections.forEach(section => {
+              observer.observe(section);
+            });
+          })
+
+
         </script>
 </body>
 </html>
